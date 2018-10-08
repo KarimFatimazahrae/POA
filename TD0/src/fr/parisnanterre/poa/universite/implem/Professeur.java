@@ -9,6 +9,7 @@ public class Professeur extends EnseignantPermanant {
     }
 
     @Override
+
     public String toString() {
         return "Professeur{" +
                 "salaire=" + salaire +
