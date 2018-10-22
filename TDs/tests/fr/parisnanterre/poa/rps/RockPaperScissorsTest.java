@@ -85,6 +85,9 @@ public class RockPaperScissorsTest {
     */
     @Test ( dataProvider = "data")
     public void testWinPlay(RPSEnum p1, RPSEnum p2, Result res){
+        
+
+
         //assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)),Result.WIN);
         assertEquals(rps.play(p1,p2),res);
     }
