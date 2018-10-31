@@ -1,10 +1,9 @@
 package fr.parisnanterre.poa.rps;
 
+import fr.parisnanterre.poa.rps.api.RPSEnum;
+import fr.parisnanterre.poa.rps.api.Result;
 import org.testng.annotations.*;
 
-import static fr.parisnanterre.poa.rps.Result.LOST;
-import static fr.parisnanterre.poa.rps.Result.TIE;
-import static fr.parisnanterre.poa.rps.Result.WIN;
 import static org.testng.Assert.*;
 
 public class RockPaperScissorsTest {
@@ -85,8 +84,6 @@ public class RockPaperScissorsTest {
     */
     @Test ( dataProvider = "data")
     public void testWinPlay(RPSEnum p1, RPSEnum p2, Result res){
-        
-
 
         //assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)),Result.WIN);
         assertEquals(rps.play(p1,p2),res);
@@ -106,4 +103,5 @@ public class RockPaperScissorsTest {
         assertEquals(rps.play(p1,p2),res);
     }
 */
+
 }
