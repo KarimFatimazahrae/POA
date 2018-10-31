@@ -1,5 +1,11 @@
 package fr.parisnanterre.poa.rps;
 
+import fr.parisnanterre.poa.rps.api.RPSEnum;
+import fr.parisnanterre.poa.rps.api.Result;
+import fr.parisnanterre.poa.rps.impl.Player;
+
+import static fr.parisnanterre.poa.rps.api.Result.LOST;
+
 public class RockPaperScissors {
 
 
@@ -21,12 +27,18 @@ public class RockPaperScissors {
                                 || p1.equals(RPSEnum.PAPER) && p2.equals(RPSEnum.SCISSORS)
                                 || p1.equals(RPSEnum.SCISSORS) && p2.equals(RPSEnum.ROCK)
                 ){
-                    retour = Result.LOST;
+                    retour = LOST;
                 }
             }
         }
 
         return retour;
+    }
+
+
+    public Result play(Player p1, Player p2){
+
+        return LOST;
     }
 }
 
