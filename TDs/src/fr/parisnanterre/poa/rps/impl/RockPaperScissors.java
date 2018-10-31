@@ -1,4 +1,4 @@
-package fr.parisnanterre.poa.rps;
+package fr.parisnanterre.poa.rps.impl;
 
 import fr.parisnanterre.poa.rps.api.RPSEnum;
 import fr.parisnanterre.poa.rps.api.Result;
@@ -36,9 +36,9 @@ public class RockPaperScissors {
     }
 
 
-    public Result play(Player p1, Player p2){
+   /* public Result play(Player p1, Player p2){
 
         return LOST;
-    }
+    }*/
 }
 

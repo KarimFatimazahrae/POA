@@ -2,6 +2,7 @@ package fr.parisnanterre.poa.rps;
 
 import fr.parisnanterre.poa.rps.api.RPSEnum;
 import fr.parisnanterre.poa.rps.api.Result;
+import fr.parisnanterre.poa.rps.impl.RockPaperScissors;
 import org.testng.annotations.*;
 
 import static org.testng.Assert.*;
