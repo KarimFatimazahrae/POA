@@ -8,8 +8,9 @@ import static fr.parisnanterre.poa.rps.api.Result.LOST;
 
 public class RockPaperScissors {
 
+//comment test Git
 
-    Result play(RPSEnum p1, RPSEnum p2){
+    public Result play(RPSEnum p1, RPSEnum p2){
         Result retour = null;
 
         if(p1.equals(p2)){
